@@ -1,0 +1,39 @@
+{
+  "resolvedId": "/Users/lois/Documents/GitHub/blog-lois-solid/src/routes/docs.mdx",
+  "transforms": [
+    {
+      "name": "__load__",
+      "result": "# MDX Docs\n\nSome description here\n",
+      "start": 1686078492120,
+      "end": 1686078492120
+    },
+    {
+      "name": "@mdx-js/rollup",
+      "result": "/*@jsxRuntime automatic @jsxImportSource solid-js*/\nimport {useMDXComponents as _provideComponents} from \"solid-mdx\";\nfunction _createMdxContent(props) {\n  const _components = Object.assign({\n    h1: \"h1\",\n    p: \"p\"\n  }, _provideComponents(), props.components);\n  return <><_components.h1>{\"MDX Docs\"}</_components.h1>{\"\\n\"}<_components.p>{\"Some description here\"}</_components.p></>;\n}\nfunction MDXContent(props = {}) {\n  const {wrapper: MDXLayout} = Object.assign({}, _provideComponents(), props.components);\n  return MDXLayout ? <MDXLayout {...props}><_createMdxContent {...props} /></MDXLayout> : _createMdxContent(props);\n}\nexport default MDXContent;\n",
+      "start": 1686078492120,
+      "end": 1686078492129,
+      "order": "pre"
+    },
+    {
+      "name": "solid-start-file-system-router",
+      "result": "import { mergeProps as _$mergeProps } from \"solid-js/web\";\nimport { createComponent as _$createComponent } from \"solid-js/web\";\n/*@jsxRuntime automatic @jsxImportSource solid-js*/\nimport { useMDXComponents as _provideComponents } from \"solid-mdx\";\nfunction _createMdxContent(props) {\n  const _components = Object.assign({\n    h1: \"h1\",\n    p: \"p\"\n  }, _provideComponents(), props.components);\n  return [_$createComponent(_components.h1, {\n    children: \"MDX Docs\"\n  }), \"\\n\", _$createComponent(_components.p, {\n    children: \"Some description here\"\n  })];\n}\nfunction MDXContent(props = {}) {\n  const {\n    wrapper: MDXLayout\n  } = Object.assign({}, _provideComponents(), props.components);\n  return MDXLayout ? _$createComponent(MDXLayout, _$mergeProps(props, {\n    get children() {\n      return _$createComponent(_createMdxContent, props);\n    }\n  })) : _createMdxContent(props);\n}\nexport default MDXContent;",
+      "start": 1686078492129,
+      "end": 1686078492171,
+      "order": "pre"
+    },
+    {
+      "name": "solid",
+      "result": "import { $$component as _$$component } from \"solid-refresh\";\nimport { $$refresh as _$$refresh } from \"solid-refresh\";\nimport { $$registry as _$$registry } from \"solid-refresh\";\nconst _REGISTRY = _$$registry();\nimport { mergeProps as _$mergeProps } from \"solid-js/web\";\nimport { createComponent as _$createComponent } from \"solid-js/web\";\n/*@jsxRuntime automatic @jsxImportSource solid-js*/\nimport { useMDXComponents as _provideComponents } from \"solid-mdx\";\nfunction _createMdxContent(props) {\n  const _components = Object.assign({\n    h1: \"h1\",\n    p: \"p\"\n  }, _provideComponents(), props.components);\n  return [_$createComponent(_components.h1, {\n    children: \"MDX Docs\"\n  }), \"\\n\", _$createComponent(_components.p, {\n    children: \"Some description here\"\n  })];\n}\nvar MDXContent = _$$component(_REGISTRY, \"MDXContent\", function MDXContent(props = {}) {\n  const {\n    wrapper: MDXLayout\n  } = Object.assign({}, _provideComponents(), props.components);\n  return MDXLayout ? _$createComponent(MDXLayout, _$mergeProps(props, {\n    get children() {\n      return _$createComponent(_createMdxContent, props);\n    }\n  })) : _createMdxContent(props);\n}, {\n  location: \"src/routes/docs.mdx:16:0\"\n});\nexport default MDXContent;\nif (import.meta.hot) {\n  _$$refresh(\"vite\", import.meta.hot, _REGISTRY);\n  import.meta.hot.accept();\n}",
+      "start": 1686078492171,
+      "end": 1686078492246,
+      "order": "pre"
+    },
+    {
+      "name": "vite:import-analysis",
+      "result": "import { createHotContext as __vite__createHotContext } from \"/@vite/client\";import.meta.hot = __vite__createHotContext(\"/src/routes/docs.mdx\");import { $$component as _$$component } from \"/@solid-refresh\";\nimport { $$refresh as _$$refresh } from \"/@solid-refresh\";\nimport { $$registry as _$$registry } from \"/@solid-refresh\";\nconst _REGISTRY = _$$registry();\nimport { mergeProps as _$mergeProps } from \"/node_modules/.vite/deps/solid-js_web.js?v=0b6b363b\";\nimport { createComponent as _$createComponent } from \"/node_modules/.vite/deps/solid-js_web.js?v=0b6b363b\";\n/*@jsxRuntime automatic @jsxImportSource solid-js*/\nimport { useMDXComponents as _provideComponents } from \"/node_modules/.vite/deps/solid-mdx.js?v=d32a8aa4\";\nfunction _createMdxContent(props) {\n  const _components = Object.assign({\n    h1: \"h1\",\n    p: \"p\"\n  }, _provideComponents(), props.components);\n  return [_$createComponent(_components.h1, {\n    children: \"MDX Docs\"\n  }), \"\\n\", _$createComponent(_components.p, {\n    children: \"Some description here\"\n  })];\n}\nvar MDXContent = _$$component(_REGISTRY, \"MDXContent\", function MDXContent(props = {}) {\n  const {\n    wrapper: MDXLayout\n  } = Object.assign({}, _provideComponents(), props.components);\n  return MDXLayout ? _$createComponent(MDXLayout, _$mergeProps(props, {\n    get children() {\n      return _$createComponent(_createMdxContent, props);\n    }\n  })) : _createMdxContent(props);\n}, {\n  location: \"src/routes/docs.mdx:16:0\"\n});\nexport default MDXContent;\nif (import.meta.hot) {\n  _$$refresh(\"vite\", import.meta.hot, _REGISTRY);\n  import.meta.hot.accept();\n}",
+      "start": 1686078492247,
+      "end": 1686078492248,
+      "order": "normal"
+    }
+  ]
+}

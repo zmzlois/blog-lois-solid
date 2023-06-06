@@ -1,0 +1,25 @@
+{
+  "resolvedId": "/Users/lois/Documents/GitHub/blog-lois-solid/src/entry-client.tsx",
+  "transforms": [
+    {
+      "name": "__load__",
+      "result": "import { mount, StartClient } from \"solid-start/entry-client\";\n\nmount(() => <StartClient />, document);\n",
+      "start": 1686079085219,
+      "end": 1686079085219
+    },
+    {
+      "name": "solid",
+      "result": "import { createComponent as _$createComponent } from \"solid-js/web\";\nimport { mount, StartClient } from \"solid-start/entry-client\";\nmount(() => _$createComponent(StartClient, {}), document);",
+      "start": 1686079085219,
+      "end": 1686079085233,
+      "order": "pre"
+    },
+    {
+      "name": "vite:import-analysis",
+      "result": "import { createComponent as _$createComponent } from \"/node_modules/.vite/deps/solid-js_web.js?v=0b6b363b\";\nimport { mount, StartClient } from \"/node_modules/.pnpm/solid-start@0.2.26_@solidjs+meta@0.28.2_@solidjs+router@0.8.2_solid-js@1.7.2_solid-start-node@0.2.19_vite@4.1.4/node_modules/solid-start/entry-client/index.tsx?t=1686079084824&v=46ce04b0\";\nmount(() => _$createComponent(StartClient, {}), document);",
+      "start": 1686079085234,
+      "end": 1686079085240,
+      "order": "normal"
+    }
+  ]
+}
